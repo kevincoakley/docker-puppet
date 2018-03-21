@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOCKER_OUTPUT=`docker run --name centos7-puppet-4.10.10 -ti kevincoakley/centos7-puppet:4.10.10 /opt/puppetlabs/bin/puppet --version`
+DOCKER_OUTPUT=`docker run --name centos7-puppet -ti kevincoakley/centos7-puppet /opt/puppetlabs/bin/puppet --version`
 
 echo $DOCKER_OUTPUT
 

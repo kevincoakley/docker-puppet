@@ -10,11 +10,11 @@ before_install:
     - docker version
 
 install:
-    - docker build -t kevincoakley/centos7-puppet:4.10.10 centos/7/4.10.10/
+    - docker build -t kevincoakley/centos7-puppet centos/7/
 
 script:
-    - bash ./tests/centos_7_4.10.10.sh
+    - bash ./tests/centos_7.sh
 
 after_script:
     - docker ps -a
-    - docker logs kevincoakley/centos7-puppet:4.10.10
+    - docker logs kevincoakley/centos7-puppet
